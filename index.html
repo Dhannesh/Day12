@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #avatars {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+      }
+
+      #avatars .imgData {
+        display: flex;
+        flex-direction: column;
+        background-color: blanchedalmond;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+      }
+      #avatars .imgData img {
+        height: 200px;
+        width: 200px;
+      }
+
+      #avatars .imgData h3 {
+        font-size: 20px;
+        padding: 10px;
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+      }
+      .btn {
+        border-radius: 10px;
+        background-color: blueviolet; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .btn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 20px">
+      <button onclick="handleClick()" class="btn">Submit</button>
+      <button onclick="start()" class="btn">Interval</button>
+      <button onclick="fetchData()" class="btn">Get GitHub Data</button>
+      <button onclick="fetchData2()" class="btn">Get GitHub Data by</button>
+      <input
+        type="text"
+        name=""
+        id="userCount"
+        value="30"
+        style="font-size: 14px; height: 30px"
+      />
+    </div>
+    <div id="avatars"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
