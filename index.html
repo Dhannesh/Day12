@@ -60,10 +60,14 @@
   </head>
   <body>
     <div style="margin-bottom: 20px">
-      <button onclick="handleClick()" class="btn">Submit</button>
-      <button onclick="start()" class="btn">Interval</button>
-      <button onclick="fetchData()" class="btn">Get GitHub Data</button>
-      <button onclick="fetchData2()" class="btn">Get GitHub Data by</button>
+      <!-- <button onclick="handleClick()" class="btn">Submit</button>
+      <button onclick="start()" class="btn">Interval</button> -->
+      <button onclick="fetchData()" class="btn">
+        Get GitHub Data (Async Await)
+      </button>
+      <button onclick="fetchData2()" class="btn">
+        Get GitHub Data (then catch)
+      </button>
       <input
         type="text"
         name=""
@@ -71,6 +75,7 @@
         value="30"
         style="font-size: 14px; height: 30px"
       />
+      <a href="./index.html" class="btn">Clear All</a>
     </div>
     <div id="avatars"></div>
     <script src="script.js"></script>
